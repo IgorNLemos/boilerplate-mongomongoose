@@ -8,7 +8,6 @@ async function run() {
   mongoose.connect(process.env.MONGO_URI);
   //await mongoose.connection.db.admin().command({ ping: 1 });
   console.log("Pinged your deployment. You successfully connected to MongoDB!");
-
 }
 run().catch(console.dir);
 
